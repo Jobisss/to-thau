@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
+import { Image } from 'astro:assets';
+import usPhoto from '../assets/us.png';
+import hearth from '../assets/heath.png';
+import { Message } from '../components/Message'
+import { CardTilt } from '../components/CardTilt'
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div class=" h-full flex flex-col justify-center items-center p-5 md:p-2 gap-11">
+		<CardTilt client:load/>
+		<div class="w-full text-center">
+			<h1 class="font-style text-6xl text-thauane-pink ">Thauane e João</h1>
+			<p class="font-bold font-poppins text-thauane-middle my-3">Juntos à</p>
+			<Message client:load date="2023-07-29"/>
+		</div>
+		<Image class={"rounded"} width={60} src={hearth} alt="nossa foto"/>
+	</div>
 </Layout>
