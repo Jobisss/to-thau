@@ -1,39 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Timeline from "../components/Timeline";
 ---
 
 <Layout>
-    <div class="p-9 text-thauane-pink">
-        <h1 class="text-7xl font-black font-poppins w-1/2">Timeline da nossa história.</h1>
-        <div class="flex flex-col gap-3 relative">
-            <div class="h-full border-2 left-1/2 border-thauane-middle absolute"></div>
-            <div class="w-full flex justify-start mt-5 relative">  
-                <div class="w-2/5 bg-thauane-pink h-96 relative rounded-md">
-                    <div class="w-64 -z-[1] top-1/2 border-thauane-middle border-2 absolute -right-[11.7em]" />  
-                </div>
-            </div>
-            <div class="w-full flex  justify-end">
-                <div class="w-2/5 bg-thauane-pink h-96 relative rounded-md">
-                    <div class="w-64 -z-[1] top-1/2 border-thauane-middle border-2 absolute -left-[11.7em]" /> 
-                </div>
-            </div>
-            <div class="w-full flex justify-start">  
-                <div class="w-2/5 bg-thauane-pink h-96 relative rounded-md">
-                    <div class="w-64 -z-[1] top-1/2 border-thauane-middle border-2 absolute -right-[11.7em]" /> 
-                    
-                </div>
-            </div>
-            <div class="w-full flex justify-end">  
-                <div class="w-2/5 relative bg-thauane-pink h-96 rounded-md">
-                    <div class="w-64 -z-[1] top-1/2 border-thauane-middle border-2 absolute -left-[11.7em]" /> 
-                </div>
-            </div>
-            <div class="w-full flex justify-start">  
-                <div class="w-2/5 bg-thauane-pink h-96 relative rounded-md">
-                    <div class="w-64 -z-[1] top-1/2 border-thauane-middle border-2 absolute -right-[11.7em]" /> 
-                </div>
-            </div>
-        </div>
-        
+    <div class="p-7 text-thauane-pink flex  flex-col h-full">
+        <h1 class="font-sulfur font-black text-2xl mb-5  shrink absolute top-5 z-20 bg-thauane-black">Nossa história juntos. </h1>
+        <Timeline client:load/>
+            <button class="bg-thauane-middle font-poppins font-semibold w-full p-1 hover:brightness-110 hover:scale-105 transition-all rounded-full text-thauane-black"><a href="/">Voltar </a> </button>
     </div>
 </Layout>

@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -17,7 +17,7 @@
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.2",
     "astro": "^5.0.5",
-    "motion": "^11.13.5",
+    "motion": "^11.14.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-parallax-tilt": "^1.7.266",

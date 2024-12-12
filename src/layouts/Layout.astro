@@ -1,25 +1,43 @@
 ---
-import '@fontsource/style-script';
-import '@fontsource/poppins/300.css';
-import '@fontsource/sulphur-point';
+import "@fontsource/style-script";
+import "@fontsource/poppins/300.css";
+import "@fontsource/sulphur-point";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body class="bg-thauane-black min-h-dvh p-3">
-		<div class="min-h-dvh ring-thauane-red shadow-thauane-red drop-shadow-lg  ring-1 rounded-md">
-			<slot />
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body class="bg-thauane-black h-dvh p-3">
+    <div
+      class="h-full overflow-y-scroll overflow-x-hidden ring-thauane-red shadow-thauane-red drop-shadow-lg ring-1 rounded-md"
+    >
+      <slot />
+    </div>
+  </body>
 </html>
 
 <style>
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
 
+    40% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    60%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 </style>
