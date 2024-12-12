@@ -10,8 +10,8 @@ export const CardTilt = () => {
             perspective={840}
             transitionSpeed={2000}
         >
-            <div className='w-full bg-thauane-red p-[0.9px] rounded-md'>
-                <img src={Img.src} className='w-[300px] rounded-md ' alt="pic" />
+            <div className='w-full bg-thauane-red p-[0.9px] rounded-md '>
+                <img src={Img.src} className='w-[250px] md:w-[250px] rounded-md ' alt="pic" />
             </div>
         </Tilt>
     )

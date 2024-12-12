@@ -34,9 +34,9 @@ const formatTime = (milliseconds: number) => {
   return formattedTime;
 };
 
-export const Message = ({ date } : { date : string }) => {
+export const Message = () => {
 
-  const startDate = new Date("2023-07-29T18:00:00");
+  const startDate = new Date("2023-07-29T19:00:00");
   const now = new Date()
   const difference = now.getTime() - startDate.getTime(); 
   const [timeElapsed, setTimeElapsed] = useState(formatTime(difference));
