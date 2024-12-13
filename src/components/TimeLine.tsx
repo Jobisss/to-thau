@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
 import Card from "../components/CardComponent"
+import Us from '../assets/us.png'
 
 
 const Timeline = () => {
@@ -21,24 +22,17 @@ const Timeline = () => {
         {/* Área de scroll */}
         <div
           ref={divRef}
-          className="w-full h-full overflow-y-scroll snap-y snap-mandatory"
+          className="w-full h-full overflow-y-scroll overflow-x-hidden snap-y snap-mandatory"
         >
-          <div className="flex flex-col items-center p-2 pt-32 w-10/12 ">
+          <div className="flex flex-col items-center p-2 pt-32">
             {[...Array(14)].map((_, index) => (
-              <div className="relative">
-                
-                <Card key={index} ref={divRef} text="Teste lorme" url="dsadsa"/>
+              <div  key={index} className="relative">
+                <Card url={Us.src} date="23/12/23" ref={divRef} text="Mensagem eior e bonita s coisas legais" />
                 <hr className="border-none bg-thauane-pink opacity-50"/>
-                <div className="w-16 ring-1  ring-thauane-red absolute -right-16 -z-10 top-1/3">
-                  <p className="absolute -top-6 text-xs font-poppins font-semibold text-center w-14">12/23/34</p>
-                </div>
               </div>
             ))}
             
           </div>
-          <div className="h-full ring-thauane-red ring-1 absolute right-0 top-0">
-          </div>
-         
         </div>
         
       </div>

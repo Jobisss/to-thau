@@ -7,16 +7,16 @@ import { CardTilt } from '../components/CardTilt'
 ---
 
 <Layout>
-	<div class=" h-full flex flex-col justify-center items-center p-5 md:p-2 gap-9">
+	<div class="h-full w-full flex flex-col justify-center items-center p-5 md:p-2 gap-2">
 		<CardTilt client:load/>
-		<div class="w-full text-center">
+		<div class="w-full text-center mt-5">
 			<h1 class="font-style text-6xl text-thauane-pink ">Thauane e João</h1>
 			<p class="font-bold font-poppins text-thauane-middle my-3">Juntos à</p>
 			<Message client:load/>
 		</div>
-		<div class="flex justify-around gap-2 text-thauane-black">
-			<button class="bg-thauane-middle font-poppins font-semibold p-2 hover:brightness-110 hover:scale-105 transition-all rounded-full w-44"><a href="timeline">Timeline  > </a> </button>
-			<button class="bg-thauane-middle font-poppins font-semibold p-2 hover:brightness-110 hover:scale-105 transition-all rounded-full w-44"><a href="">Mensagemzinha >  </a></button>
+		<div class="flex w-full md:w-1/4 justify-around gap-2 text-thauane-black">
+			<button class="bg-thauane-middle font-poppins font-semibold p-2 hover:brightness-110 hover:scale-105 transition-all rounded-full w-1/2 text-sm md:text-base"><a href="timeline">Timeline  > </a> </button>
+			<button class="bg-thauane-middle font-poppins font-semibold p-2 hover:brightness-110 hover:scale-105 transition-all rounded-full w-1/2 text-sm md:text-base"><a href="message">Mensagemzinha >  </a></button>
 		</div>
 		<Image class={"rounded"} width={60} src={hearth} alt="nossa foto"/>
 	</div>
