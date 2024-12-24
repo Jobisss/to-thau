@@ -1,12 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Timeline from "../components/Timeline";
+import LinhaTempo from "../components/LinhaDoTempo";
 ---
 
 <Layout>
     <div class="p-7 text-thauane-pink flex  flex-col h-full">
         <h1 class="font-sulfur font-black text-2xl md:text-5xl mb-5  shrink absolute top-5 z-20 bg-thauane-black">Nossa história juntos. </h1>
-        <Timeline client:load/>
+        <LinhaTempo client:load/>
         <button class="bg-thauane-middle font-poppins font-semibold w-full p-1 hover:brightness-110 hover:scale-105 transition-all rounded-full text-thauane-black"><a href="/">Voltar </a> </button>
     </div>
 </Layout>
